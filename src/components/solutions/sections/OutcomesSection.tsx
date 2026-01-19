@@ -9,19 +9,21 @@ interface Outcome {
 }
 
 interface OutcomesSectionProps {
+    title: string;
+    subtitle: string;
     outcomes: Outcome[];
 }
 
-const OutcomesSection = ({ outcomes }: OutcomesSectionProps) => {
+const OutcomesSection = ({ title, subtitle, outcomes }: OutcomesSectionProps) => {
     return (
         <section className="py-24 bg-white">
             <div className="container px-4 md:px-6">
                 <div className="mb-16 max-w-2xl">
                     <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                        Why replace manual work with this system?
+                        {title}
                     </h2>
                     <p className="text-lg text-slate-500">
-                        Operational outcomes that impact your bottom line immediately.
+                        {subtitle}
                     </p>
                 </div>
 

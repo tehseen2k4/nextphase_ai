@@ -5,8 +5,8 @@ import OutcomesSection from '@/components/solutions/sections/OutcomesSection';
 import ProcessFlow from '@/components/solutions/sections/ProcessFlow';
 import PricingSection from '@/components/solutions/sections/PricingSection';
 import ComplianceSection from '@/components/solutions/sections/ComplianceSection';
-import CTASection from '@/components/home/CTASection'; // Reusing global CTA
-import { Clock, CheckSquare, MessageCircle, BarChart3, Users } from 'lucide-react';
+import CTASection from '@/components/home/CTASection';
+import { Clock, CheckSquare, MessageCircle, BarChart3, Lock, FileCheck, Eye, Shield } from 'lucide-react';
 
 export const metadata: Metadata = {
     title: 'Recruitment OS | NextPhase AI',
@@ -88,6 +88,29 @@ export default function RecruitmentOSPage() {
         }
     ];
 
+    const complianceFeatures = [
+        {
+            title: "GDPR & SOC2 Ready",
+            description: "Data is encrypted at rest and in transit. Granular retention policies ensure you never hold PII longer than needed.",
+            icon: Lock
+        },
+        {
+            title: "Automated Audit Logs",
+            description: "Every AI decision and human action is logged in an immutable ledger for rapid regulatory reporting.",
+            icon: FileCheck
+        },
+        {
+            title: "Human-in-the-Loop",
+            description: "Critical decisions (like hiring or medical alerts) always route to a human expert for final validation.",
+            icon: Eye
+        },
+        {
+            title: "Bias Protection",
+            description: "Algorithms are rigorously tested against bias benchmarks to ensure fair and equitable outcomes.",
+            icon: Shield
+        }
+    ];
+
     return (
         <div className="bg-slate-50 min-h-screen">
             <SolutionHero
@@ -97,11 +120,15 @@ export default function RecruitmentOSPage() {
                 audience={['HR Teams', 'Agencies', 'Fast-Scaling Companies']}
             />
 
-            <OutcomesSection outcomes={outcomes} />
+            <OutcomesSection
+                title="Why replace manual work with this system?"
+                subtitle="Operational outcomes that impact your bottom line immediately."
+                outcomes={outcomes}
+            />
 
             <ProcessFlow steps={steps} />
 
-            <ComplianceSection />
+            <ComplianceSection features={complianceFeatures} />
 
             <PricingSection tiers={pricingTiers} />
 
