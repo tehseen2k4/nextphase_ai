@@ -30,10 +30,10 @@ const Footer = () => {
                     <div className="md:col-span-2 lg:col-span-2">
                         <h3 className="font-semibold text-slate-900 mb-6">Solutions</h3>
                         <ul className="space-y-4">
-                            <li><Link href="/solutions/recruitment" className="text-slate-500 hover:text-indigo-600 transition-colors">Recruitment OS</Link></li>
-                            <li><Link href="/solutions/smart-home" className="text-slate-500 hover:text-indigo-600 transition-colors">Smart Home</Link></li>
-                            <li><Link href="/solutions/pharmacy" className="text-slate-500 hover:text-indigo-600 transition-colors">Pharmacy</Link></li>
-                            <li><Link href="/solutions/automation-core" className="text-slate-500 hover:text-indigo-600 transition-colors">AI Core</Link></li>
+                            <li><Link href="/solutions/recruitment-os" className="text-slate-500 hover:text-indigo-600 transition-colors">Recruitment OS</Link></li>
+                            <li><Link href="/solutions/smart-home-monitoring" className="text-slate-500 hover:text-indigo-600 transition-colors">Smart Home</Link></li>
+                            <li><Link href="/solutions/pharmacy-automation" className="text-slate-500 hover:text-indigo-600 transition-colors">Pharmacy</Link></li>
+                            <li><Link href="/solutions/ai-automation-core" className="text-slate-500 hover:text-indigo-600 transition-colors">AI Core</Link></li>
                         </ul>
                     </div>
 
