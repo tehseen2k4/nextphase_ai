@@ -5,44 +5,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Users, Home, Activity, BrainCircuit } from 'lucide-react';
 
-const solutions = [
-    {
-        title: "Recruitment OS",
-        description: "Automate hiring flows with defensible compliance and bias reduction.",
-        href: "/solutions/recruitment",
-        icon: Users,
-        color: "text-blue-600",
-        bg: "bg-blue-50",
-        border: "border-blue-100"
-    },
-    {
-        title: "Smart Home Monitoring",
-        description: "Privacy-first pattern detection for aging in place and safety.",
-        href: "/solutions/smart-home",
-        icon: Home,
-        color: "text-emerald-600",
-        bg: "bg-emerald-50",
-        border: "border-emerald-100"
-    },
-    {
-        title: "Pharmacy Automation",
-        description: "Zero-error operational flows and automated audit trails.",
-        href: "/solutions/pharmacy",
-        icon: Activity,
-        color: "text-rose-600",
-        bg: "bg-rose-50",
-        border: "border-rose-100"
-    },
-    {
-        title: "AI Automation Core",
-        description: "The central intelligence engine scaling across all your systems.",
-        href: "/solutions/automation-core",
-        icon: BrainCircuit,
-        color: "text-amber-600",
-        bg: "bg-amber-50",
-        border: "border-amber-100"
-    }
-];
+import { solutions } from '@/lib/solutions-data';
 
 const SolutionsGrid = () => {
     return (
