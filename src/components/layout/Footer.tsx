@@ -4,7 +4,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className="bg-slate-50 border-t border-slate-200">
-            <div className="container py-16 md:py-24">
+            <div className="container mx-auto px-4 md:px-6 py-16 md:py-24">
                 {/* Massive Brand - Top Section */}
                 <div className="mb-16">
                     <h2 className="text-[12vw] font-bold tracking-tighter text-slate-200 leading-none select-none">
