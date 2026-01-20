@@ -10,9 +10,10 @@ interface SolutionHeroProps {
     subtitle: string;
     description: string;
     audience: string[];
+    trustLine?: string;
 }
 
-const SolutionHero = ({ title, subtitle, description, audience }: SolutionHeroProps) => {
+const SolutionHero = ({ title, subtitle, description, audience, trustLine }: SolutionHeroProps) => {
     return (
         <section className="relative pt-32 pb-20 overflow-hidden bg-slate-50">
             {/* Background Mesh */}
@@ -57,6 +58,18 @@ const SolutionHero = ({ title, subtitle, description, audience }: SolutionHeroPr
                     >
                         {description}
                     </motion.p>
+
+                    {trustLine && (
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.25 }}
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 shadow-sm mb-8"
+                        >
+                            <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+                            <span className="text-sm font-medium text-slate-700">{trustLine}</span>
+                        </motion.div>
+                    )}
 
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}

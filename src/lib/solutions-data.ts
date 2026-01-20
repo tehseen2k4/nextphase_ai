@@ -1,4 +1,4 @@
-import { Users, Home, Activity, BrainCircuit, LucideIcon } from 'lucide-react';
+import { Users, Home, Activity, BrainCircuit, Heart, LucideIcon } from 'lucide-react';
 
 export interface Solution {
     title: string;
@@ -31,6 +31,16 @@ export const solutions: Solution[] = [
         bg: "bg-emerald-50",
         border: "border-emerald-100",
         benefit: "Detects falls and routine shifts without cameras or wearables."
+    },
+    {
+        title: "Virtual Care & Assistive Living",
+        description: "Daily check-ins and family alerts for seniors living independently.",
+        href: "/solutions/virtual-care",
+        icon: Heart,
+        color: "text-purple-600",
+        bg: "bg-purple-50",
+        border: "border-purple-100",
+        benefit: "AI-assisted daily check-ins with human escalation — so families know someone will notice."
     },
     {
         title: "Pharmacy Automation",
